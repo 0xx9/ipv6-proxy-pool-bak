@@ -1,0 +1,9 @@
+node_modules/
+*.log
+*.pid
+proxies.txt
+.env
+config/ipv6.conf
+config/auth.conf
+.DS_Store
+server/package-lock.json

@@ -1,0 +1,18 @@
+# IPv6 Proxy Pool Configuration
+
+# Your IPv6 /64 subnet (without the :: suffix)
+# Example: 2001:db8:1234:5678
+IPV6_SUBNET="2001:db8:xxxx:xxxx"
+
+# Network interface (eth0, ens3, enp0s3, etc.)
+INTERFACE="eth0"
+
+# Port range
+START_PORT=12000
+END_PORT=12499
+
+# Number of proxies (calculated from port range if not set)
+PROXY_COUNT=500
+
+# IPv4 bind address (0.0.0.0 = all interfaces)
+BIND_IPV4="0.0.0.0"

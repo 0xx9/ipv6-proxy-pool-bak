@@ -1,0 +1,6 @@
+# Proxy Authentication Configuration
+
+ENABLE_AUTH=false
+USERNAME="proxyuser"
+PASSWORD="changeMe123!"
+WHITELIST_IPS=""

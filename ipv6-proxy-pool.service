@@ -1,0 +1,23 @@
+[Unit]
+Description=IPv6 Proxy Pool - 100 Rotating Proxies
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/ipv6-proxy-pool/server
+ExecStart=/usr/bin/node /root/ipv6-proxy-pool/server/proxy-server.js
+Restart=always
+RestartSec=10
+StandardOutput=append:/root/ipv6-proxy-pool/proxy-pool.log
+StandardError=append:/root/ipv6-proxy-pool/proxy-pool.log
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+
+# Environment
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

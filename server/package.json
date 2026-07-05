@@ -1,0 +1,19 @@
+{
+  "name": "ipv6-proxy-pool",
+  "version": "1.0.0",
+  "description": "IPv6 rotating proxy pool with 100 unique exit IPs",
+  "main": "proxy-server.js",
+  "scripts": {
+    "start": "node proxy-server.js",
+    "dev": "node proxy-server.js"
+  },
+  "keywords": [
+    "proxy",
+    "ipv6",
+    "rotating-proxy",
+    "proxy-pool"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}
